@@ -1,148 +1,113 @@
-# 🔵 Blue Team Portfolio
+# 🔵 Blue Team Portfolio — Emmanuel Mbatha Ndolo
 
-## 👨‍💻 About Me
+**MSc Applied Cybersecurity | TU Dublin | CompTIA Security+**
 
-I am a cybersecurity enthusiast focused on Blue Team operations, with hands-on experience gained through practical labs and real-world simulations in Security Operations Center (SOC) environments.
+---
 
-Currently pursuing an MSc in Applied Cybersecurity, I have developed skills in threat detection, log analysis, and incident investigation using tools such as Splunk, Wireshark, and T-Pot. My work involves analyzing attacker behavior, investigating security events, and building detection use cases in controlled lab environments.
+## 👤 About Me
 
-I am continuously learning and improving my skills with the goal of becoming a SOC Analyst.
+I am a cybersecurity MSc student at Technological University Dublin, focused on Blue Team operations, threat intelligence, and Security Operations. My work combines academic research with hands-on practical labs — including a live honeypot deployment that captured over **2 million real-world attacks**.
+
+My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and this portfolio documents the skills and projects I am building toward that.
+
+📍 Dublin, Ireland
+🔗 [LinkedIn](https://www.linkedin.com/in/emmanuelndolo/)
+📧 bravianndolo075@gmail.com
 
 ---
 
 ## 🎯 Career Focus
 
-* SOC Analyst
-* Threat Detection & Monitoring
-* Incident Response
-* Threat Intelligence
-
----
-
-## 🛠️ Tools & Technologies
-
-* SIEM: Splunk, Elastic Stack (ELK)
-* Network Analysis: Wireshark, tcpdump
-* Operating Systems: Linux (Parrot OS, Ubuntu), Windows
-* Malware Analysis: Flare VM, IDA Free
-* Scripting: Python (basic automation & log analysis)
-* Other: Git, Virtual Machines, Docker
-
----
-
-## 🎓 Certifications
-
-* 🛡️ **CompTIA Security+** — [View Credential](PASTE-YOUR-SECURITY-PLUS-CREDLY-LINK-HERE)
-* 🔐 **Data Protection Certificate** — *(Available upon request)*
-* 🎯 **MITRE ATT&CK (Operationalizing MITRE ATT&CK v13)** — [View Credential](https://www.credly.com/badges/e6a283b4-d7b8-4cb1-93f1-fb67809b3d32/public_url)
+| Area | Status |
+|---|---|
+| SOC Analysis & Alert Triage | ✅ Active |
+| Threat Intelligence & IOC Extraction | ✅ Active |
+| Honeypot Deployment & Analysis | ✅ Completed |
+| Malware Analysis (Static + Behavioural) | 🔄 In Progress |
+| SIEM / Splunk Detection Engineering | 🔄 In Progress |
+| Cloud Security (Azure) | 🔄 In Progress — AZ-900 |
 
 ---
 
 ## 🚀 Projects
 
-### 🔹 Honeypot Attack Analysis (T-Pot)
+### 🍯 [T-Pot Honeypot — Threat Intelligence Analysis](./honeypot-tpot-analysis/)
+> Deployed a live multi-honeypot environment on DigitalOcean, capturing **2,000,000+ real-world attacks** over 2 months. Full intrusion chain reconstructed. Malware families identified via Hybrid Analysis.
 
-**Objective:**
-To analyze real-world attack patterns using a deployed honeypot.
-
-**Tools Used:**
-T-Pot, Kibana, Elasticsearch
-
-**Key Highlights:**
-
-* Captured real attacker traffic targeting services such as SSH (port 22), SMB (445), and HTTP (80)
-* Analyzed attacker commands including reconnaissance and malware download attempts
-* Identified trends in attack frequency and source IP behavior
-
-**Outcome:**
-Developed insights into common attack vectors and attacker behavior in real environments.
+**Tools:** T-Pot, Cowrie, Suricata, ELK Stack (Elasticsearch, Logstash, Kibana), Wireshark, Hybrid Analysis
+**Key findings:** Mirai + Tsunami botnet infection chain, IOC extraction, MITRE ATT&CK mapping
 
 ---
 
-### 🔹 SIEM Log Analysis & Threat Detection
+### 📊 SIEM Log Analysis & Threat Detection *(In Progress)*
+> Detecting suspicious activity using Splunk — ingesting system and security logs, building detection queries for brute-force attempts and failed logins, and visualising security events via dashboards.
 
-**Objective:**
-To detect suspicious activities using log data in a SIEM environment.
-
-**Tools Used:**
-Splunk
-
-**Key Highlights:**
-
-* Ingested system and security logs
-* Created detection queries for failed login attempts and brute-force attacks
-* Built dashboards to visualize security events
-
-**Outcome:**
-Improved understanding of alert triage and SOC monitoring workflows.
+**Tools:** Splunk
 
 ---
 
-### 🔹 Network Traffic Analysis
+### 🌐 Network Traffic Analysis *(In Progress)*
+> Analysing PCAP files using Wireshark to identify suspicious patterns, anomalous DNS/HTTP traffic, and potential C2 communication.
 
-**Objective:**
-To analyze network traffic and identify suspicious patterns.
-
-**Tools Used:**
-Wireshark
-
-**Key Highlights:**
-
-* Inspected packet captures (PCAP files)
-* Identified unusual traffic patterns and potential malicious communication
-* Analyzed protocols such as DNS and HTTP
-
-**Outcome:**
-Enhanced skills in detecting anomalies in network traffic.
+**Tools:** Wireshark, tcpdump
 
 ---
 
-### 🔹 Malware Analysis (Basic)
+### 🦠 Malware Analysis — Basic Static & Behavioural *(In Progress)*
+> Extracting strings and metadata from suspicious ELF binaries. Investigating file characteristics and execution patterns consistent with IoT botnet families.
 
-**Objective:**
-To analyze suspicious files and identify indicators of compromise (IOCs).
-
-**Tools Used:**
-Flare VM, IDA Free, strings
-
-**Key Highlights:**
-
-* Extracted strings and metadata from suspicious binaries
-* Identified potential malicious behavior
-* Investigated file characteristics and execution patterns
-
-**Outcome:**
-Developed foundational skills in malware analysis and threat identification.
+**Tools:** Flare VM, IDA Free, strings, Hybrid Analysis
 
 ---
 
-## 📊 SOC Workflow Demonstrated
+## 🛠️ Tools & Technologies
 
-This portfolio reflects practical SOC operations including:
-
-* Alert monitoring and triage
-* Log analysis and investigation
-* Identification of Indicators of Compromise (IOCs)
-* Basic incident response and reporting
-
----
-
-## 📈 Future Improvements
-
-* Develop advanced detection rules (Sigma, SPL)
-* Integrate MITRE ATT&CK mapping
-* Build automated threat detection scripts
-* Expand threat hunting scenarios
+| Category | Tools |
+|---|---|
+| SIEM | Splunk, Elastic Stack (ELK) |
+| Network Analysis | Wireshark, tcpdump, Nmap |
+| Honeypot | T-Pot, Cowrie, Suricata, Dionaea, Honeytrap |
+| Malware Analysis | Hybrid Analysis, Flare VM, IDA Free, strings |
+| Scripting | Python (log analysis, automation), Bash |
+| Operating Systems | Linux (Parrot OS, Ubuntu), Windows 10/11 |
+| Frameworks | MITRE ATT&CK, NIST CSF |
+| Visualisation | Kibana, Grafana |
+| Cloud | DigitalOcean, Microsoft Azure (AZ-900 in progress) |
+| Other | Git, Docker, Virtual Machines |
 
 ---
 
-## 📫 Contact
+## 📜 Certifications
 
-* LinkedIn: https://www.linkedin.com/in/emmanuelndolo/
-* Email: bravianndolo075@gmail.com
+| Certification | Issuer | Status |
+|---|---|---|
+| 🛡️ CompTIA Security+ (SY0-701) | CompTIA | ✅ Issued Jan 2025 — Valid Jan 2028 |
+| 🎯 MITRE ATT&CK Foundations v13 | AttackIQ | ✅ Issued Oct 2025 |
+| 🔒 Data Protection & GDPR | Strathmore University | ✅ Completed |
+| ☁️ AZ-900 Azure Fundamentals | Microsoft | 🔄 In Progress |
 
 ---
 
-## ⚡ Note
+## 📚 Education
 
-This portfolio is continuously updated as I expand my knowledge and hands-on experience in cybersecurity and Blue Team operations.
+- **MSc in Applied Cybersecurity** — Technological University Dublin *(Sep 2025 – Aug 2026)*
+- **BSc in Business Information Technology** — Strathmore University *(2021 – 2024)*
+
+---
+
+## 🗺️ SOC Workflow Demonstrated
+
+Through the honeypot project and lab work, I have demonstrated the following SOC operations:
+
+- ✅ Alert monitoring and triage
+- ✅ Log analysis and investigation
+- ✅ IOC identification and documentation
+- ✅ Incident reconstruction and reporting
+- ✅ Malware identification and behavioural analysis
+- ✅ MITRE ATT&CK TTP mapping
+- 🔄 Sigma/SPL detection rule writing *(in progress)*
+- 🔄 Threat hunting *(in progress)*
+
+---
+
+> *This portfolio is continuously updated as I expand my knowledge and hands-on experience in cybersecurity and Blue Team operations.*
