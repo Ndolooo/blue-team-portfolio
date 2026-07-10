@@ -81,9 +81,9 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 
 | Certification | Issuer | Status |
 |---|---|---|
-| 🛡️ CompTIA Security+ (SY0-701) | CompTIA | ✅ Issued Jan 2025 — Valid Jan 2028 |
-| 🎯 MITRE ATT&CK Foundations v13 | AttackIQ | ✅ Issued Oct 2025 |
-| 🔒 Data Protection & GDPR | Strathmore University | ✅ Completed |
+| 🛡️ [CompTIA Security+ (SY0-701)](https://www.credly.com/badges/a909a467-e6ef-4fdf-9b20-ab23bdcd1f67/public_url) | CompTIA | ✅ Issued Jan 2025 — Valid Jan 2028 |
+| 🎯 [MITRE ATT&CK Foundations v13](https://www.credly.com/badges/e6a283b4-d7b8-4cb1-93f1-fb67809b3d32/public_url) | AttackIQ | ✅ Issued Oct 2025 |
+| 🔒 Data Protection & GDPR | Strathmore University | ✅ Completed | Available upon request
 | ☁️ AZ-900 Azure Fundamentals | Microsoft | 🔄 In Progress |
 
 ---
