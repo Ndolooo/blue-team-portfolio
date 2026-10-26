@@ -24,7 +24,6 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 | Threat Intelligence & IOC Extraction | ✅ Active |
 | Honeypot Deployment & Analysis | ✅ Completed |
 | SIEM / Detection Engineering — Microsoft Sentinel | ✅ Completed |
-| SIEM / Splunk Detection Engineering | 🔄 In Progress |
 | Cloud Security (Azure) | 🔄 In Progress — AZ-900 |
 | Malware Analysis (Static + Behavioural) | 🔄 In Progress |
 
