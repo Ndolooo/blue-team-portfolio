@@ -23,9 +23,10 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 | SOC Analysis & Alert Triage | ✅ Active |
 | Threat Intelligence & IOC Extraction | ✅ Active |
 | Honeypot Deployment & Analysis | ✅ Completed |
-| Malware Analysis (Static + Behavioural) | 🔄 In Progress |
+| SIEM / Detection Engineering — Microsoft Sentinel | ✅ Completed |
 | SIEM / Splunk Detection Engineering | 🔄 In Progress |
 | Cloud Security (Azure) | 🔄 In Progress — AZ-900 |
+| Malware Analysis (Static + Behavioural) | 🔄 In Progress |
 
 ---
 
@@ -36,6 +37,15 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 
 **Tools:** T-Pot, Cowrie, Suricata, ELK Stack (Elasticsearch, Logstash, Kibana), Wireshark, Hybrid Analysis
 **Key findings:** Mirai + Tsunami botnet infection chain, IOC extraction, MITRE ATT&CK mapping
+
+---
+
+### ☁️ [Home SOC Lab — Microsoft Sentinel & Azure](./azure-sentinel-soc-lab/)
+
+> Built an internet-exposed Windows honeypot in Azure, streamed its security log into Microsoft Sentinel, and ran a brute-force detection rule (MITRE T1110) end to end: 723,986 failed logons from 580 IPs over 20 days, 265 incidents raised, and a representative incident worked through triage with IP enrichment (AbuseIPDB, VirusTotal, Defender TI). A compromise assessment found no successful intrusion. Also analysed why raising the rule threshold did not reduce alert noise.
+
+**Tools:** Microsoft Sentinel, Azure Monitor Agent and DCR, KQL, Log Analytics, Azure Workbooks, AbuseIPDB, VirusTotal, MITRE ATT&CK
+**Key findings:** 99.3% of attempts used non-existent usernames; no attacker ever logged in; changing the threshold from 10 to 50 made no measurable difference to incident volume, pointing to the single-alert rule design.
 
 ---
 
@@ -64,15 +74,15 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 
 | Category | Tools |
 |---|---|
-| SIEM | Splunk, Elastic Stack (ELK) |
+| SIEM | Microsoft Sentinel (KQL), Splunk, Elastic Stack (ELK) |
 | Network Analysis | Wireshark, tcpdump, Nmap |
 | Honeypot | T-Pot, Cowrie, Suricata, Dionaea, Honeytrap |
 | Malware Analysis | Hybrid Analysis, Flare VM, IDA Free, strings |
 | Scripting | Python (log analysis, automation), Bash |
 | Operating Systems | Linux (Parrot OS, Ubuntu), Windows 10/11 |
 | Frameworks | MITRE ATT&CK, NIST CSF |
-| Visualisation | Kibana, Grafana |
-| Cloud | DigitalOcean, Microsoft Azure (AZ-900 in progress) |
+| Visualisation | Kibana, Grafana, Azure Workbooks |
+| Cloud | DigitalOcean, Microsoft Azure (Sentinel, Log Analytics; AZ-900 in progress) |
 | Other | Git, Docker, Virtual Machines |
 
 ---
@@ -83,7 +93,7 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 |---|---|---|
 | 🛡️ [CompTIA Security+ (SY0-701)](https://www.credly.com/badges/a909a467-e6ef-4fdf-9b20-ab23bdcd1f67/public_url) | CompTIA | ✅ Issued Jan 2025 — Valid Jan 2028 |
 | 🎯 [MITRE ATT&CK Foundations v13](https://www.credly.com/badges/e6a283b4-d7b8-4cb1-93f1-fb67809b3d32/public_url) | AttackIQ | ✅ Issued Oct 2025 |
-| 🔒 Data Protection & GDPR | Strathmore University | ✅ Completed | Available upon request
+| 🔒 Data Protection & GDPR | Strathmore University | ✅ Completed | Available upon request |
 | ☁️ AZ-900 Azure Fundamentals | Microsoft | 🔄 In Progress |
 
 ---
@@ -105,9 +115,9 @@ Through the honeypot project and lab work, I have demonstrated the following SOC
 - ✅ Incident reconstruction and reporting
 - ✅ Malware identification and behavioural analysis
 - ✅ MITRE ATT&CK TTP mapping
+- ✅ Detection engineering: KQL analytics rule, entity mapping, IP enrichment (Sentinel lab)
+- ✅ Compromise assessment: successful logons, account changes and persistence checks (Sentinel lab)
 - 🔄 Sigma/SPL detection rule writing *(in progress)*
 - 🔄 Threat hunting *(in progress)*
 
 ---
-
-> *This portfolio is continuously updated as I expand my knowledge and hands-on experience in cybersecurity and Blue Team operations.*
