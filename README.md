@@ -6,7 +6,7 @@
 
 ## 👤 About Me
 
-I am a cybersecurity MSc student at Technological University Dublin, focused on Blue Team operations, threat intelligence, and Security Operations. My work combines academic research with hands-on practical labs — including a live honeypot deployment that captured over **2 million real-world attacks**.
+I am a cybersecurity MSc student at Technological University Dublin, focused on Blue Team operations, threat intelligence, and Security Operations. My work combines academic research with hands-on practical labs — including a live honeypot deployment that captured over **2 million real-world attacks** and a Microsoft Sentinel home SOC lab that detected and triaged brute-force activity against an exposed Azure VM.
 
 My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and this portfolio documents the skills and projects I am building toward that.
 
