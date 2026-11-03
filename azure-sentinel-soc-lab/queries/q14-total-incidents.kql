@@ -1,0 +1,4 @@
+// Query 14: total incidents
+SecurityIncident
+| summarize arg_max(TimeGenerated, *) by IncidentNumber
+| summarize TotalIncidents = count(), First = min(CreatedTime), Last = max(CreatedTime)

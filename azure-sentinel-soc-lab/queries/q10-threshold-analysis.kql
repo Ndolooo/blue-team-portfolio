@@ -1,0 +1,5 @@
+// Query 10: threshold analysis
+SecurityEvent
+| where EventID == 4625 and isnotempty(IpAddress) and IpAddress != "-"
+| summarize Attempts = count() by IpAddress, bin(TimeGenerated, 1h)
+| summarize AtLeast10 = countif(Attempts >= 10), AtLeast30 = countif(Attempts >= 30), AtLeast100 = countif(Attempts >= 100) by Day = bin(TimeGenerated, 1d)

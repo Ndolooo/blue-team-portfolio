@@ -1,0 +1,5 @@
+// Query 9: why did the logons fail?
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts = count() by SubStatus
+| sort by Attempts desc

@@ -1,0 +1,4 @@
+// Query 1: headline totals
+SecurityEvent
+| where EventID == 4625 and isnotempty(IpAddress) and IpAddress != "-"
+| summarize TotalFailed = count(), DistinctIPs = dcount(IpAddress), DistinctAccounts = dcount(Account), First = min(TimeGenerated), Last = max(TimeGenerated)

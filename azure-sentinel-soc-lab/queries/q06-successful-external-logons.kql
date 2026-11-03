@@ -1,0 +1,5 @@
+// Query 6: successful external logons
+SecurityEvent
+| where EventID == 4624 and LogonType in (3, 10)
+| where isnotempty(IpAddress) and IpAddress != "-"
+| summarize Logons = count(), Accounts = make_set(Account), FirstSeen = min(TimeGenerated), LastSeen = max(TimeGenerated) by IpAddress

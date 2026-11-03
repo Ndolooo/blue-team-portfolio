@@ -1,0 +1,5 @@
+// Query 7: account changes, persistence and log clearing
+SecurityEvent
+| where EventID in (4720, 4723, 4724, 4732, 4698, 1102)
+| project TimeGenerated, EventID, Activity, Account, TargetAccount
+| sort by TimeGenerated desc

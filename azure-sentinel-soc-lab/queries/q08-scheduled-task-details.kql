@@ -1,0 +1,9 @@
+// Query 8: scheduled task details
+SecurityEvent
+| where EventID == 4698
+| extend TaskName = extract(@'Name="TaskName">([^<]+)<', 1, EventData)
+| extend CreatedBy = extract(@'Name="SubjectUserName">([^<]+)<', 1, EventData)
+| extend LogonId = extract(@'Name="SubjectLogonId">([^<]+)<', 1, EventData)
+| extend Command = extract(@'Command&gt;([^&]+)&lt;', 1, EventData)
+| project TimeGenerated, TaskName, CreatedBy, LogonId, Command
+| sort by TimeGenerated desc

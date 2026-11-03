@@ -1,0 +1,5 @@
+// Query 3: top attacking IPs
+SecurityEvent
+| where EventID == 4625 and isnotempty(IpAddress) and IpAddress != "-"
+| summarize Attempts = count(), Accounts = make_set(Account, 10), FirstSeen = min(TimeGenerated), LastSeen = max(TimeGenerated) by IpAddress
+| sort by Attempts desc

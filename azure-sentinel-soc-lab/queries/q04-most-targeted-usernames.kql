@@ -1,0 +1,6 @@
+// Query 4: most targeted usernames
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts = count() by Account
+| sort by Attempts desc
+| take 20

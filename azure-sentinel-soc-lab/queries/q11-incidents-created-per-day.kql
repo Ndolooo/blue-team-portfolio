@@ -1,0 +1,5 @@
+// Query 11: incidents created per day
+SecurityIncident
+| summarize arg_max(TimeGenerated, *) by IncidentNumber
+| summarize Incidents = count() by Day = bin(CreatedTime, 1d)
+| render columnchart

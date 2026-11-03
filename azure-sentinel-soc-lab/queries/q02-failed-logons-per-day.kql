@@ -1,0 +1,5 @@
+// Query 2: failed logons per day
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts = count() by bin(TimeGenerated, 1d)
+| render columnchart

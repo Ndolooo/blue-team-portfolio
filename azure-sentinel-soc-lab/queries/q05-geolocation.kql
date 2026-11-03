@@ -1,0 +1,7 @@
+// Query 5: geolocation
+SecurityEvent
+| where EventID == 4625 and isnotempty(IpAddress) and IpAddress != "-"
+| summarize Attempts = count() by IpAddress
+| extend Geo = geo_info_from_ip_address(IpAddress)
+| extend Country = tostring(Geo.country), City = tostring(Geo.city), Latitude = toreal(Geo.latitude), Longitude = toreal(Geo.longitude)
+| sort by Attempts desc

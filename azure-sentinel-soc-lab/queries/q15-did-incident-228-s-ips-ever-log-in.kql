@@ -1,0 +1,3 @@
+// Query 15: did incident 228's IPs ever log in?
+SecurityEvent
+| where EventID == 4624 and IpAddress in ("23.94.69.14", "185.136.15.7")

@@ -1,0 +1,9 @@
+// Query 12: workbook attack map
+SecurityEvent
+| where EventID == 4625 and isnotempty(IpAddress) and IpAddress != "-"
+| summarize Attempts = count() by IpAddress
+| extend Geo = geo_info_from_ip_address(IpAddress)
+| extend Country = tostring(Geo.country), City = tostring(Geo.city), Latitude = round(toreal(Geo.latitude), 2), Longitude = round(toreal(Geo.longitude), 2)
+| where isnotnull(Latitude)
+| summarize Attempts = sum(Attempts), IPs = count() by Country, City, Latitude, Longitude
+| top 100 by Attempts desc
