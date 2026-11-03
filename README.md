@@ -24,7 +24,6 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 | Threat Intelligence & IOC Extraction | ✅ Active |
 | Honeypot Deployment & Analysis | ✅ Completed |
 | SIEM / Detection Engineering — Microsoft Sentinel | ✅ Completed |
-| SIEM / Splunk Detection Engineering | 🔄 In Progress |
 | Cloud Security (Azure) | 🔄 In Progress — AZ-900 |
 | Malware Analysis (Static + Behavioural) | 🔄 In Progress |
 
@@ -74,7 +73,7 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 
 | Category | Tools |
 |---|---|
-| SIEM | Microsoft Sentinel (KQL), Splunk, Elastic Stack (ELK) |
+| SIEM | Microsoft Sentinel (KQL), Elastic Stack (ELK) |
 | Network Analysis | Wireshark, tcpdump, Nmap |
 | Honeypot | T-Pot, Cowrie, Suricata, Dionaea, Honeytrap |
 | Malware Analysis | Hybrid Analysis, Flare VM, IDA Free, strings |
@@ -117,7 +116,6 @@ Through the honeypot project and lab work, I have demonstrated the following SOC
 - ✅ MITRE ATT&CK TTP mapping
 - ✅ Detection engineering: KQL analytics rule, entity mapping, IP enrichment (Sentinel lab)
 - ✅ Compromise assessment: successful logons, account changes and persistence checks (Sentinel lab)
-- 🔄 Sigma/SPL detection rule writing *(in progress)*
 - 🔄 Threat hunting *(in progress)*
 
 ---
