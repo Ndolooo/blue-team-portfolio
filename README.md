@@ -84,16 +84,16 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 
 | Category | Tools |
 |---|---|
-| SIEM | Microsoft Sentinel (KQL), Elastic Stack (ELK) |
+| SIEM | Microsoft Sentinel (KQL), Elastic Stack (ELK), Splunk (in progress) |
 | Network Analysis | Wireshark, tcpdump, Nmap |
 | Honeypot | T-Pot, Cowrie, Suricata, Dionaea, Honeytrap |
 | Malware Analysis | Hybrid Analysis, Flare VM, IDA Free, strings |
 | Scripting | Python (log analysis, automation), Bash |
 | Operating Systems | Linux (Parrot OS, Ubuntu), Windows 10/11 |
-| Frameworks | MITRE ATT&CK, NIST CSF |
+| Threat Intelligence | MISP, CIRCL OSINT & Botvrij.eu feeds, AbuseIPDB, VirusTotal, Defender TI |
 | Visualisation | Kibana, Grafana, Azure Workbooks |
 | Cloud | DigitalOcean, Microsoft Azure (Sentinel, Log Analytics; AZ-900 in progress) |
-| Other | Git, Docker, Virtual Machines |
+| Other | Git, Docker & Docker Compose, Virtual Machines |
 
 ---
 
