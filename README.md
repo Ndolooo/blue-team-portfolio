@@ -53,7 +53,10 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 
 **Tools:** MISP (Docker), CIRCL OSINT and Botvrij.eu feeds, MITRE ATT&CK, MITRE ATLAS, Python, Ollama (local LLM)
 **Progress so far:** MISP deployed in Docker with feed caching and cross-feed correlation working
+
 [Priority Intelligence Requirements](./ai-threat-intel/docs/PIRs.md) written for four AI-threat areas
+
+---
 
 
 ### 📊 SIEM Log Analysis & Threat Detection *(In Progress)*
