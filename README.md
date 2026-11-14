@@ -47,6 +47,13 @@ My goal is to work as a **SOC Analyst** or **Threat Intelligence Analyst**, and 
 **Key findings:** 99.3% of attempts used non-existent usernames; no attacker ever logged in; changing the threshold from 10 to 50 made no measurable difference to incident volume, pointing to the single-alert rule design.
 
 ---
+### 🤖 [AI-Threat Intelligence Tracker — MISP](./ai-threat-intel) *(In Progress)*
+
+> Running a small threat intelligence function focused on AI-enabled threats — AI phishing and deepfakes, malicious AI packages and MCP servers, prompt-injection exploitation, and attacker use of LLMs — for a fictional Irish fintech. Follows the full intelligence lifecycle, from Priority Intelligence Requirements through to monthly AI Threat Briefs.
+
+**Tools:** MISP (Docker), CIRCL OSINT and Botvrij.eu feeds, MITRE ATT&CK, MITRE ATLAS, Python, Ollama (local LLM)
+**Progress so far:** MISP deployed in Docker with feed caching and cross-feed correlation working; [Priority Intelligence Requirements](./ai-threat-intel/docs/PIRs.md) written for four AI-threat areas
+
 
 ### 📊 SIEM Log Analysis & Threat Detection *(In Progress)*
 > Detecting suspicious activity using Splunk — ingesting system and security logs, building detection queries for brute-force attempts and failed logins, and visualising security events via dashboards.
